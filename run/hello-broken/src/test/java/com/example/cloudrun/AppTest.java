@@ -84,7 +84,7 @@ public class AppTest {
   }
 
   private static TestResponse executeRequest(String method, String path) throws IOException {
-    URL url = new URL("http://localhost:8080" + path);
+    URL url = new URL("https://hello-broken-sr572cbmhq-nw.a.run.app:8080" + path);
     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
     connection.setRequestMethod(method);
     connection.setDoOutput(true);
